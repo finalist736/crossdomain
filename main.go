@@ -9,7 +9,7 @@ var listenChannel chan net.Conn = make(chan net.Conn, 10)
 
 func StartCrossDomain() error {
 	var err error
-	ln, err := net.Listen("tcp", ":8430")
+	ln, err := net.Listen("tcp", ":843")
 	if err != nil {
 		return err
 	}
